@@ -25,27 +25,27 @@
             <children>
                 <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="135.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@image/Rewind.png" />
+                        <Image url="@icon/Rewind.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="239.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@image/Fast Forward.png" />
+                        <Image url="@icon/Fast Forward.png" />
                     </image>
                 </ImageView>
                 <ImageView fx:id="playImage" fitHeight="32.0" fitWidth="41.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="true">
                     <image>
-                        <Image url="@image/Play.png" />
+                        <Image url="@icon/Play.png" />
                     </image>
                 </ImageView>
                 <ImageView fx:id="pauseImage" fitHeight="26.0" fitWidth="30.0" layoutX="190.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
                     <image>
-                        <Image url="@image/Pause.png" />
+                        <Image url="@icon/Pause.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="40.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@image/Add Song.png" />
+                        <Image url="@icon/Add Song.png" />
                     </image>
                 </ImageView>
                 <Button layoutX="39.0" layoutY="18.0" mnemonicParsing="false" onAction="#chooseMusic" prefHeight="32.0" prefWidth="32.0" styleClass="tranparent" stylesheets="@styles.css" />
