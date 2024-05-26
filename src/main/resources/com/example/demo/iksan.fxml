@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="body-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MusicPlayerController">
+    <children>
+        <ListView fx:id="songList" layoutX="31.0" layoutY="81.0" prefHeight="360.0" prefWidth="469.0" styleClass="tranparent" stylesheets="@styles.css" />
+        <ImageView fx:id="albumCover" fitHeight="279.0" fitWidth="267.0" layoutX="649.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+        <Label fx:id="songName" alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="362.0" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label fx:id="ArtistName" alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="378.0" textFill="WHITE" />
+        <AnchorPane layoutY="540.0" minHeight="-Infinity" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #0B1E3E;">
+            <children>
+                <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="135.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Rewind.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="239.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Fast Forward.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="playImage" fitHeight="32.0" fitWidth="41.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="true">
+                    <image>
+                        <Image url="@image/Play.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="pauseImage" fitHeight="26.0" fitWidth="30.0" layoutX="190.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@image/Pause.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="40.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Add Song.png" />
+                    </image>
+                </ImageView>
+                <Button layoutX="39.0" layoutY="18.0" mnemonicParsing="false" onAction="#chooseMusic" prefHeight="32.0" prefWidth="32.0" styleClass="tranparent" stylesheets="@styles.css" />
+                <Slider fx:id="volumeSlider" layoutX="811.0" layoutY="27.0" prefHeight="14.0" prefWidth="130.0" value="50.0" />
+              <Slider fx:id="timeSlider" layoutX="338.0" layoutY="23.0" prefWidth="300.0" />
+                <Button fx:id="previousButton" layoutX="140.0" layoutY="18.0" onAction="#previous" prefHeight="25.0" prefWidth="22.0" styleClass="tranparent" stylesheets="@styles.css" />
+      
+                            <Button fx:id="playButton" layoutX="192.0" layoutY="13.0" onAction="#play" prefHeight="26.0" prefWidth="22.0" styleClass="tranparent" stylesheets="@styles.css" />
+                <Button fx:id="nextButton" layoutX="245.0" layoutY="20.0" onAction="#next" prefHeight="26.0" prefWidth="30.0" styleClass="tranparent" stylesheets="@styles.css" />
+              <Label fx:id="durationLabel" layoutX="448.0" layoutY="38.0" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <PointLight color="CHARTREUSE" lightOn="true" />
+        <PerspectiveCamera />
+        <ParallelCamera />
+
+
+
+    </children>
+</AnchorPane>
