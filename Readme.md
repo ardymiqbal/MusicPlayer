@@ -1,13 +1,13 @@
-## MusicPlayer
+# MusicPlayer
 ![Tampilan Aplikasi](src/main/resources/images/Screenshot.png)
 
-# History
+## History
 Project ini dibuat untuk memenuhi tugas akhir mata kuliah Pemograman Lanjut
 
-# How it works
+## How it works
 - Memainkan music dengan menambahkan file music dari computer ke dalam aplikasi
 - Menampilkan Metadata file musik
 
-# Library
+## Library
 - [Jaudiotagger](https://github.com/RouHim/jaudiotagger)
 
