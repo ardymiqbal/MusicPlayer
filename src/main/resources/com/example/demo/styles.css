@@ -1,0 +1,19 @@
+.bottom_bar_color{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #0B1E3E ,#4E154C);
+}
+
+.body-background{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#085A89 , #0E154C );
+}
+
+.tranparent{
+    -fx-background-color:rgba(0,0,0,0);
+}
+.song-list {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.song-list .list-cell {
+    -fx-text-fill: white;
+}
