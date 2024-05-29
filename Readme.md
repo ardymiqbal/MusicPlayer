@@ -1,5 +1,5 @@
 ## MusicPlayer
-![Tampilan Aplikasi](images/Screenshot.png)
+![Tampilan Aplikasi](/images/Screenshot.png)
 
 # History
 Project ini dibuat untuk memenuhi tugas akhir mata kuliah Pemograman Lanjut
